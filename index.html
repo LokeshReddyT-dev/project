@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem-Solution Statement Guide | Master Problem Framing</title>
+  <meta name="description" content="An interactive educational guide to mastering Problem-Solution Statements for students, project teams, entrepreneurs, hackathons, and product leaders.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6.5.1 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1100;"></div>
+
+  <!-- STICKY NAVBAR -->
+  <nav id="mainNavbar" class="navbar navbar-expand-xl sticky-top custom-navbar">
+    <div class="container-xl">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <div class="brand-icon-box">
+          <i class="fa-solid fa-bullseye"></i>
+        </div>
+        <span class="brand-title">Problem-Solution <span class="gradient-text">Guide</span></span>
+      </a>
+
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#what-is-it">What Is It?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#key-elements">Key Elements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#framework">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#solution-neutral">Neutrality</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#benefits">Benefits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mistakes">Mistakes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#example">Example</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#formula">Formula</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#builder">Create Yours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#checker">Checker</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0">
+          <a href="#builder" class="btn btn-primary-gradient nav-cta-btn">
+            <i class="fa-solid fa-wand-magic-sparkles me-1"></i> Create Statement
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header id="home" class="hero-section position-relative overflow-hidden py-5 py-lg-6">
+    <div class="hero-bg-shapes">
+      <div class="shape-blob shape-1"></div>
+      <div class="shape-blob shape-2"></div>
+      <div class="shape-grid-pattern"></div>
+    </div>
+
+    <div class="container-xl position-relative z-1 py-4 py-lg-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 hero-content">
+          <div class="hero-badge mb-3">
+            <span class="badge-dot"></span>
+            <i class="fa-solid fa-layer-group me-1"></i> Problem-Solution Framework
+          </div>
+          <h1 class="display-4 fw-bold hero-heading mb-3">
+            Turn Problems Into <span class="gradient-text">Actionable Solutions</span>
+          </h1>
+          <p class="hero-subtitle mb-4">
+            Learn how to identify problems clearly, understand their impact, analyze root causes, define measurable objectives, and create effective solution strategies.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="#framework" class="btn btn-secondary-glass btn-lg">
+              <i class="fa-solid fa-compass me-2"></i> Learn the Framework
+            </a>
+            <a href="#builder" class="btn btn-primary-gradient btn-lg">
+              <i class="fa-solid fa-pen-ruler me-2"></i> Create Your Statement
+            </a>
+          </div>
+
+          <div class="hero-audience-pills d-flex flex-wrap align-items-center gap-2 pt-2">
+            <span class="audience-label text-muted small"><i class="fa-solid fa-users-viewfinder me-1"></i> Designed for:</span>
+            <span class="audience-pill">Students</span>
+            <span class="audience-pill">Project Teams</span>
+            <span class="audience-pill">Entrepreneurs</span>
+            <span class="audience-pill">Hackathons</span>
+            <span class="audience-pill">Professionals</span>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-visual-card p-4 p-md-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <span class="framework-card-title">
+                <i class="fa-solid fa-arrows-split-up-and-left text-primary me-2"></i> The 4-Stage Pathway
+              </span>
+              <span class="badge rounded-pill bg-primary-subtle text-primary border border-primary-subtle px-3 py-1">
+                Interactive Map
+              </span>
+            </div>
+
+            <!-- Animated Pathway Stages -->
+            <div class="pathway-container">
+              <!-- Stage 1 -->
+              <div class="pathway-node" data-stage="problem">
+                <div class="node-icon-wrapper node-problem">
+                  <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+                <div class="node-details">
+                  <div class="node-tag text-danger">Stage 01</div>
+                  <h6 class="node-title">Problem</h6>
+                  <p class="node-desc">Identify the precise gap</p>
+                </div>
+              </div>
+
+              <!-- Connector 1 -->
+              <div class="pathway-connector">
+                <div class="connector-line">
+                  <div class="pulse-dot"></div>
+                </div>
+                <i class="fa-solid fa-chevron-down d-block d-sm-none my-1 text-muted"></i>
+              </div>
+
+              <!-- Stage 2 -->
+              <div class="pathway-node" data-stage="analysis">
+                <div class="node-icon-wrapper node-analysis">
+                  <i class="fa-solid fa-magnifying-glass-chart"></i>
+                </div>
+                <div class="node-details">
+                  <div class="node-tag text-warning">Stage 02</div>
+                  <h6 class="node-title">Analysis</h6>
+                  <p class="node-desc">Impact & root cause (5 Whys)</p>
+                </div>
+              </div>
+
+              <!-- Connector 2 -->
+              <div class="pathway-connector">
+                <div class="connector-line">
+                  <div class="pulse-dot"></div>
+                </div>
+                <i class="fa-solid fa-chevron-down d-block d-sm-none my-1 text-muted"></i>
+              </div>
+
+              <!-- Stage 3 -->
+              <div class="pathway-node" data-stage="solution">
+                <div class="node-icon-wrapper node-solution">
+                  <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <div class="node-details">
+                  <div class="node-tag text-primary">Stage 03</div>
+                  <h6 class="node-title">Solution</h6>
+                  <p class="node-desc">Targeted, neutral action plan</p>
+                </div>
+              </div>
+
+              <!-- Connector 3 -->
+              <div class="pathway-connector">
+                <div class="connector-line">
+                  <div class="pulse-dot"></div>
+                </div>
+                <i class="fa-solid fa-chevron-down d-block d-sm-none my-1 text-muted"></i>
+              </div>
+
+              <!-- Stage 4 -->
+              <div class="pathway-node" data-stage="outcome">
+                <div class="node-icon-wrapper node-outcome">
+                  <i class="fa-solid fa-flag-checkered"></i>
+                </div>
+                <div class="node-details">
+                  <div class="node-tag text-success">Stage 04</div>
+                  <h6 class="node-title">Outcome</h6>
+                  <p class="node-desc">Quantified target metrics</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-card-footer mt-4 pt-3 border-top d-flex align-items-center justify-content-between">
+              <span class="text-muted small"><i class="fa-regular fa-lightbulb text-warning me-1"></i> Click nodes for quick insights</span>
+              <span id="hero-node-insight" class="badge bg-light text-dark border px-2 py-1 small">Problem: What isn't working?</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 5: WHAT IS A PROBLEM-SOLUTION STATEMENT? -->
+  <section id="what-is-it" class="py-5 py-lg-6 section-alt">
+    <div class="container-xl">
+      <div class="section-header text-center mx-auto mb-5" style="max-width: 720px;">
+        <span class="section-badge"><i class="fa-solid fa-circle-info me-1"></i> Fundamental Definition</span>
+        <h2 class="section-title">What Is a Problem-Solution Statement?</h2>
+        <p class="section-subtitle">
+          The foundation of every successful product, engineering endeavor, business case, and research initiative.
+        </p>
+      </div>
+
+      <!-- Large Explanation Card -->
+      <div class="explanation-hero-card mb-5 p-4 p-md-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <div class="quote-mark mb-2"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="lead-explanation mb-3">
+              “A problem-solution statement identifies a specific issue and proposes a clear path to resolve it. This concise format helps organizations focus their efforts on addressing challenges efficiently.”
+            </p>
+            <p class="text-muted mb-0">
+              Without a clear statement, teams risk building expensive solutions for the wrong problems, confusing symptoms with root causes, and jumping to biased assumptions.
+            </p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="stat-highlight-box p-3">
+              <div class="stat-value text-primary">70%</div>
+              <div class="stat-label">of failed initiatives trace back to poor problem definition rather than flawed execution.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive 5-Pillar Component Cards -->
+      <div class="row g-4">
+        <!-- 1. Problem -->
+        <div class="col-md-6 col-lg">
+          <div class="pillar-card h-100" data-pillar="problem">
+            <div class="pillar-icon bg-danger-subtle text-danger">
+              <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+            <div class="pillar-badge">01</div>
+            <h5 class="pillar-title">Problem</h5>
+            <div class="pillar-question text-danger fw-semibold mb-2">“What isn’t working?”</div>
+            <p class="pillar-desc text-muted small">
+              Identifies the breakdown, friction, or unmet need without pointing fingers or assuming fixes.
+            </p>
+            <div class="pillar-footer">
+              <span class="badge bg-light text-secondary border">Specifies the friction</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Impact -->
+        <div class="col-md-6 col-lg">
+          <div class="pillar-card h-100" data-pillar="impact">
+            <div class="pillar-icon bg-warning-subtle text-warning">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="pillar-badge">02</div>
+            <h5 class="pillar-title">Impact</h5>
+            <div class="pillar-question text-warning fw-semibold mb-2">“Who is affected?”</div>
+            <p class="pillar-desc text-muted small">
+              Details who experiences the pain, the severity of the loss, financial costs, or lost time.
+            </p>
+            <div class="pillar-footer">
+              <span class="badge bg-light text-secondary border">Quantifies the stakes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Cause -->
+        <div class="col-md-6 col-lg">
+          <div class="pillar-card h-100" data-pillar="cause">
+            <div class="pillar-icon bg-info-subtle text-info">
+              <i class="fa-solid fa-sitemap"></i>
+            </div>
+            <div class="pillar-badge">03</div>
+            <h5 class="pillar-title">Cause</h5>
+            <div class="pillar-question text-info fw-semibold mb-2">“Why is it happening?”</div>
+            <p class="pillar-desc text-muted small">
+              Uncovers the systemic root cause through 5-Whys analysis rather than surface symptoms.
+            </p>
+            <div class="pillar-footer">
+              <span class="badge bg-light text-secondary border">Targets root drivers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Solution -->
+        <div class="col-md-6 col-lg">
+          <div class="pillar-card h-100" data-pillar="solution">
+            <div class="pillar-icon bg-primary-subtle text-primary">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+            <div class="pillar-badge">04</div>
+            <h5 class="pillar-title">Solution</h5>
+            <div class="pillar-question text-primary fw-semibold mb-2">“What can be done?”</div>
+            <p class="pillar-desc text-muted small">
+              Proposes a feasible, targeted intervention crafted strictly after understanding the root cause.
+            </p>
+            <div class="pillar-footer">
+              <span class="badge bg-light text-secondary border">Actionable strategy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Outcome -->
+        <div class="col-md-6 col-lg">
+          <div class="pillar-card h-100" data-pillar="outcome">
+            <div class="pillar-icon bg-success-subtle text-success">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="pillar-badge">05</div>
+            <h5 class="pillar-title">Outcome</h5>
+            <div class="pillar-question text-success fw-semibold mb-2">“What does success look like?”</div>
+            <p class="pillar-desc text-muted small">
+              Defines clear, verifiable metrics that confirm whether the gap has been successfully closed.
+            </p>
+            <div class="pillar-footer">
+              <span class="badge bg-light text-secondary border">Measurable criteria</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: CURRENT STATE VS DESIRED STATE -->
+  <section id="states" class="py-5 py-lg-6">
+    <div class="container-xl">
+      <div class="section-header text-center mx-auto mb-5" style="max-width: 720px;">
+        <span class="section-badge"><i class="fa-solid fa-arrows-left-right me-1"></i> Understanding The Delta</span>
+        <h2 class="section-title">Current State vs Desired State</h2>
+        <p class="section-subtitle">
+          “A strong problem statement describes the gap between the current state and the desired state.”
+        </p>
+      </div>
+
+      <div class="gap-comparison-container p-4 p-lg-5">
+        <div class="row align-items-center g-4">
+          <!-- Left: Current State -->
+          <div class="col-lg-5">
+            <div class="state-box current-state-box p-4 h-100">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="state-badge current-badge">
+                  <i class="fa-solid fa-triangle-exclamation me-1"></i> Current State
+                </span>
+                <span class="text-danger small fw-semibold">The Pain Point</span>
+              </div>
+              <h4 class="state-heading text-danger mb-3">Where We Are Today</h4>
+              <p class="text-muted small mb-4">Unoptimized processes leading to frustration, lost productivity, and team friction.</p>
+
+              <ul class="state-list list-unstyled mb-0">
+                <li class="state-item current-item">
+                  <div class="item-icon text-danger"><i class="fa-solid fa-clock"></i></div>
+                  <div>
+                    <strong>Long waiting times</strong>
+                    <div class="text-muted small">Averages 12+ minutes per person in queue</div>
+                  </div>
+                </li>
+                <li class="state-item current-item">
+                  <div class="item-icon text-danger"><i class="fa-solid fa-chart-line-down"></i></div>
+                  <div>
+                    <strong>Low productivity</strong>
+                    <div class="text-muted small">Teams waste 15+ hours weekly on redundant work</div>
+                  </div>
+                </li>
+                <li class="state-item current-item">
+                  <div class="item-icon text-danger"><i class="fa-solid fa-bug"></i></div>
+                  <div>
+                    <strong>High error rates</strong>
+                    <div class="text-muted small">14% error rate in manual submissions</div>
+                  </div>
+                </li>
+                <li class="state-item current-item">
+                  <div class="item-icon text-danger"><i class="fa-solid fa-face-frown"></i></div>
+                  <div>
+                    <strong>Customer dissatisfaction</strong>
+                    <div class="text-muted small">CSAT dropping to 54% with high churn complaints</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Middle: Identify The Gap Bridge -->
+          <div class="col-lg-2 text-center my-3 my-lg-0">
+            <div class="gap-bridge-column">
+              <div class="gap-bridge-icon">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              </div>
+              <div class="gap-bridge-badge">
+                Identify the Gap
+              </div>
+              <div class="gap-metrics-card mt-3 p-2">
+                <div class="small fw-semibold text-primary">The Delta</div>
+                <div class="delta-bar-wrapper my-2">
+                  <div class="delta-bar"></div>
+                </div>
+                <div class="small text-muted">Solve what lies between</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Desired State -->
+          <div class="col-lg-5">
+            <div class="state-box desired-state-box p-4 h-100">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="state-badge desired-badge">
+                  <i class="fa-solid fa-circle-check me-1"></i> Desired State
+                </span>
+                <span class="text-success small fw-semibold">The Target Vision</span>
+              </div>
+              <h4 class="state-heading text-success mb-3">Where We Want to Be</h4>
+              <p class="text-muted small mb-4">Streamlined workflow with measurable efficiency, clarity, and satisfaction.</p>
+
+              <ul class="state-list list-unstyled mb-0">
+                <li class="state-item desired-item">
+                  <div class="item-icon text-success"><i class="fa-solid fa-bolt"></i></div>
+                  <div>
+                    <strong>Faster service</strong>
+                    <div class="text-muted small">Prompt turnaround under 5 minutes</div>
+                  </div>
+                </li>
+                <li class="state-item desired-item">
+                  <div class="item-icon text-success"><i class="fa-solid fa-gauge-high"></i></div>
+                  <div>
+                    <strong>Improved productivity</strong>
+                    <div class="text-muted small">Automated tasks free up 20+ productive hours</div>
+                  </div>
+                </li>
+                <li class="state-item desired-item">
+                  <div class="item-icon text-success"><i class="fa-solid fa-shield-halved"></i></div>
+                  <div>
+                    <strong>Fewer errors</strong>
+                    <div class="text-muted small">Quality controls keep error rate below 1%</div>
+                  </div>
+                </li>
+                <li class="state-item desired-item">
+                  <div class="item-icon text-success"><i class="fa-solid fa-face-smile"></i></div>
+                  <div>
+                    <strong>Better customer experience</strong>
+                    <div class="text-muted small">CSAT elevated to 92%+ positive feedback</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="gap-summary-callout text-center mt-4 pt-3 border-top">
+          <p class="mb-0 text-muted">
+            <strong class="text-dark">Key Takeaway:</strong> A good problem statement never focuses solely on where you are or solely on where you want to be. It articulates the <em>friction preventing the transition</em>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: KEY ELEMENTS (6 INTERACTIVE CARDS) -->
+  <section id="key-elements" class="py-5 py-lg-6 section-alt">
+    <div class="container-xl">
+      <div class="section-header text-center mx-auto mb-5" style="max-width: 720px;">
+        <span class="section-badge"><i class="fa-solid fa-cubes me-1"></i> Core Building Blocks</span>
+        <h2 class="section-title">The 6 Key Elements</h2>
+        <p class="section-subtitle">
+          Every comprehensive Problem-Solution statement is engineered using these six foundational components.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 01 Clear Problem Identification -->
+        <div class="col-lg-4 col-md-6">
+          <div class="element-card h-100 p-4">
+            <div class="element-number">01</div>
+            <div class="element-header d-flex align-items-center gap-3 mb-3">
+              <div class="element-icon-box bg-primary-subtle text-primary">
+                <i class="fa-solid fa-crosshairs"></i>
+              </div>
+              <div>
+                <h5 class="mb-0 fw-bold">Clear Problem Identification</h5>
+                <span class="small text-muted">Specificity over generality</span>
+              </div>
+            </div>
+            <p class="text-muted small mb-3">
+              “Specifically define what isn't working.” Avoid emotional or vague complaints; anchor the issue in observable reality.
+            </p>
+            <div class="example-comparison-box p-3 rounded-3 mb-3">
+              <div class="example-bad mb-2">
+                <span class="badge bg-danger-subtle text-danger me-1">❌ Bad</span>
+                <span class="small text-danger-emphasis">“The service is bad.”</span>
+              </div>
+              <div class="example-good">
+                <span class="badge bg-success-subtle text-success me-1">✅ Good</span>
+                <span class="small text-success-emphasis">“Customers experience an average waiting time of 12 minutes.”</span>
+              </div>
+            </div>
+            <div class="element-tip small text-muted">
+              <i class="fa-solid fa-circle-check text-success me-1"></i> Measurable, specific, and unambiguous.
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 Impact Assessment -->
+        <div class="col-lg-4 col-md-6">
+          <div class="element-card h-100 p-4">
+            <div class="element-number">02</div>
+            <div class="element-header d-flex align-items-center gap-3 mb-3">
+              <div class="element-icon-box bg-warning-subtle text-warning">
+                <i class="fa-solid fa-users-rays"></i>
+              </div>
+              <div>
+                <h5 class="mb-0 fw-bold">Impact Assessment</h5>
+                <span class="small text-muted">Who & how severely</span>
+              </div>
+            </div>
+            <p class="text-muted small mb-3">
+              “Explain who is affected and how serious the issue is.” Connect the technical issue to human and economic consequences.
+            </p>
+            <div class="stakeholders-group mb-3">
+              <div class="small fw-semibold text-secondary mb-2">Stakeholders usually impacted:</div>
+              <div class="d-flex flex-wrap gap-1">
+                <span class="stakeholder-tag"><i class="fa-solid fa-user me-1"></i> Customers</span>
+                <span class="stakeholder-tag"><i class="fa-solid fa-briefcase me-1"></i> Employees</span>
+                <span class="stakeholder-tag"><i class="fa-solid fa-graduation-cap me-1"></i> Students</span>
+                <span class="stakeholder-tag"><i class="fa-solid fa-user-tie me-1"></i> Managers</span>
+                <span class="stakeholder-tag"><i class="fa-solid fa-city me-1"></i> Communities</span>
+              </div>
+            </div>
+            <div class="element-tip small text-muted">
+              <i class="fa-solid fa-circle-check text-success me-1"></i> Validates why solving this matters right now.
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 Root Cause Analysis -->
+        <div class="col-lg-4 col-md-6">
+          <div class="element-card h-100 p-4">
+            <div class="element-number">03</div>
+            <div class="element-header d-flex align-items-center gap-3 mb-3">
+              <div class="element-icon-box bg-info-subtle text-info">
+                <i class="fa-solid fa-magnifying-glass-nodes"></i>
+              </div>
+              <div>
+                <h5 class="mb-0 fw-bold">Root Cause Analysis</h5>
+                <span class="small text-muted">Underlying reason, not symptom</span>
+              </div>
+            </div>
+            <p class="text-muted small mb-3">
+              “Identify why the problem exists rather than focusing only on symptoms.” Peel back layers to prevent recurring issues.
+            </p>
+            <div class="whys-mini-diagram p-3 rounded-3 mb-3 text-center">
+              <div class="diagram-step badge bg-white text-dark border">Problem</div>
+              <div class="diagram-arrow text-primary"><i class="fa-solid fa-arrow-down"></i></div>
+              <div class="diagram-step badge bg-light text-secondary border">Why?</div>
+              <div class="diagram-arrow text-primary"><i class="fa-solid fa-arrow-down"></i></div>
+              <div class="diagram-step badge bg-light text-secondary border">Why?</div>
+              <div class="diagram-arrow text-primary"><i class="fa-solid fa-arrow-down"></i></div>
+              <div class="diagram-step badge bg-success-subtle text-success border border-success-subtle fw-bold">Root Cause</div>
+            </div>
+            <button class="btn btn-outline-primary btn-sm w-100" data-bs-toggle="modal" data-bs-target="#fiveWhysModal">
+              <i class="fa-solid fa-diagram-project me-1"></i> Explore 5 Whys Tool
+            </button>
+          </div>
+        </div>
+
+        <!-- 04 Measurable Objectives -->
+        <div class="col-lg-4 col-md-6">
+          <div class="element-card h-100 p-4">
+            <div class="element-number">04</div>
+            <div class="element-header d-flex align-items-center gap-3 mb-3">
+              <div class="element-icon-box bg-success-subtle text-success">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              <div>
+                <h5 class="mb-0 fw-bold">Measurable Objectives</h5>
+                <span class="small text-muted">Quantifiable targets</span>
+              </div>
+            </div>
+            <p class="text-muted small mb-3">
+              “Set concrete goals that can be measured.” Transform ambiguous aspirations into verifiable numerical metrics.
+            </p>
+            <div class="metric-indicator-box p-3 rounded-3 mb-3">
+              <div class="d-flex justify-content-between small fw-semibold mb-1">
+                <span>Waiting Time Objective:</span>
+                <span class="text-success">-58%</span>
+              </div>
+              <div class="progress" style="height: 10px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="12">12m</div>
+              </div>
+              <div class="progress mt-2" style="height: 10px;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 42%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="12">5m</div>
+              </div>
+              <div class="d-flex justify-content-between text-muted small mt-2">
+                <span>Baseline: 12 min</span>
+                <span class="text-success fw-bold">Target: 5 min</span>
+              </div>
+            </div>
+            <div class="element-tip small text-muted">
+              <i class="fa-solid fa-circle-check text-success me-1"></i> Must be specific, time-bound, and auditable.
+            </div>
+          </div>
+        </div>
+
+        <!-- 05 Proposed Solution -->
+        <div class="col-lg-4 col-md-6">
+          <div class="element-card h-100 p-4">
+            <div class="element-number">05</div>
+            <div class="element-header d-flex align-items-center gap-3 mb-3">
+              <div class="element-icon-box bg-indigo-subtle text-indigo">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <div>
+                <h5 class="mb-0 fw-bold">Proposed Solution</h5>
+                <span class="small text-muted">Targeted, evidence-based action</span>
+              </div>
+            </div>
+            <p class="text-muted small mb-3">
+              “Outline specific actions that can address the identified problem.” Crucial rule: the solution must be proposed <em>after</em> diagnosing the root cause.
+            </p>
+            <div class="solution-logic-box p-3 rounded-3 mb-3">
+              <div class="small fw-semibold text-indigo mb-1"><i class="fa-solid fa-arrow-turn-down me-1"></i> Solution Sequence:</div>
+              <div class="d-flex align-items-center gap-2 small text-muted">
+                <span class="badge bg-light text-dark border">1. Understand</span> ➔ 
+                <span class="badge bg-light text-dark border">2. Verify Root</span> ➔ 
+                <span class="badge bg-primary text-white">3. Architect</span>
+              </div>
+            </div>
+            <div class="element-tip small text-muted">
+              <i class="fa-solid fa-circle-check text-success me-1"></i> Neutral framing unlocks multiple competing ideas.
+            </div>
+          </div>
+        </div>
+
+        <!-- 06 Expected Outcomes -->
+        <div class="col-lg-4 col-md-6">
+          <div class="element-card h-100 p-4">
+            <div class="element-number">06</div>
+            <div class="element-header d-flex align-items-center gap-3 mb-3">
+              <div class="element-icon-box bg-teal-subtle text-teal">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div>
+                <h5 class="mb-0 fw-bold">Expected Outcomes</h5>
+                <span class="small text-muted">The future reality</span>
+              </div>
+            </div>
+            <p class="text-muted small mb-3">
+              “Describe what success will look like.” Clearly paint the picture of organizational health and stakeholder satisfaction once implemented.
+            </p>
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <div class="p-2 border rounded text-center bg-white">
+                  <div class="fw-bold text-success small">-58%</div>
+                  <div class="text-muted" style="font-size: 0.72rem;">Waiting Time</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-2 border rounded text-center bg-white">
+                  <div class="fw-bold text-primary small">+38%</div>
+                  <div class="text-muted" style="font-size: 0.72rem;">Customer CSAT</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-2 border rounded text-center bg-white">
+                  <div class="fw-bold text-warning small">-25%</div>
+                  <div class="text-muted" style="font-size: 0.72rem;">Operational Cost</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-2 border rounded text-center bg-white">
+                  <div class="fw-bold text-info small">+50%</div>
+                  <div class="text-muted" style="font-size: 0.72rem;">Productivity</div>
+                </div>
+              </div>
+            </div>
+            <div class="element-tip small text-muted">
+              <i class="fa-solid fa-circle-check text-success me-1"></i> Connects the engineering output to business value.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: PROBLEM-SOLUTION FRAMEWORK (PROCESS TIMELINE) -->
+  <section id="framework" class="py-5 py-lg-6">
+    <div class="container-xl">
+      <div class="section-header text-center mx-auto mb-5" style="max-width: 720px;">
+        <span class="section-badge"><i class="fa-solid fa-timeline me-1"></i> Step-By-Step Process</span>
+        <h2 class="section-title">The Problem-Solution Framework</h2>
+        <p class="section-subtitle">
+          Follow this 6-step sequential discipline to move from messy observations to validated, scalable solutions.
+        </p>
+      </div>
+
+      <!-- Process Timeline Container -->
+      <div class="timeline-container position-relative">
+        <div class="timeline-central-line"></div>
+
+        <!-- Step 1 -->
+        <div class="timeline-item timeline-left" data-aos="fade-up">
+          <div class="timeline-badge-circle">
+            <span class="badge-num">1</span>
+          </div>
+          <div class="timeline-content p-4">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="timeline-icon text-danger"><i class="fa-solid fa-triangle-exclamation"></i></span>
+              <h5 class="mb-0 fw-bold">1. Identify Problem</h5>
+            </div>
+            <p class="text-muted small mb-2">
+              Recognize that a breakdown or unmet need exists. State clearly what is happening vs what should be happening, backed by initial data.
+            </p>
+            <div class="timeline-pro-tip p-2 rounded bg-light border small text-muted">
+              <i class="fa-solid fa-lightbulb text-warning me-1"></i> <strong>Pro-Tip:</strong> Avoid vague words like "bad", "slow", or "broken". Use exact numbers and occurrences.
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-item timeline-right" data-aos="fade-up">
+          <div class="timeline-badge-circle">
+            <span class="badge-num">2</span>
+          </div>
+          <div class="timeline-content p-4">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="timeline-icon text-warning"><i class="fa-solid fa-people-group"></i></span>
+              <h5 class="mb-0 fw-bold">2. Understand Impact</h5>
+            </div>
+            <p class="text-muted small mb-2">
+              Identify everyone who suffers from the problem. Measure the damage in lost hours, churn, dollars, stress, or security vulnerabilities.
+            </p>
+            <div class="timeline-pro-tip p-2 rounded bg-light border small text-muted">
+              <i class="fa-solid fa-lightbulb text-warning me-1"></i> <strong>Pro-Tip:</strong> Interview stakeholders directly to hear how it damages their daily workflow.
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-item timeline-left" data-aos="fade-up">
+          <div class="timeline-badge-circle">
+            <span class="badge-num">3</span>
+          </div>
+          <div class="timeline-content p-4">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="timeline-icon text-info"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></span>
+              <h5 class="mb-0 fw-bold">3. Find Root Cause</h5>
+            </div>
+            <p class="text-muted small mb-2">
+              Do not stop at the symptom. Apply root cause techniques like the 5 Whys, Fishbone diagram, and Gemba walk to uncover systemic triggers.
+            </p>
+            <div class="timeline-pro-tip p-2 rounded bg-light border small text-muted">
+              <i class="fa-solid fa-lightbulb text-warning me-1"></i> <strong>Pro-Tip:</strong> A symptom is headache; the root cause is dehydration. Treat the root, not the symptom.
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-item timeline-right" data-aos="fade-up">
+          <div class="timeline-badge-circle">
+            <span class="badge-num">4</span>
+          </div>
+          <div class="timeline-content p-4">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="timeline-icon text-primary"><i class="fa-solid fa-bullseye"></i></span>
+              <h5 class="mb-0 fw-bold">4. Define Objective</h5>
+            </div>
+            <p class="text-muted small mb-2">
+              Set SMART goals: Specific, Measurable, Achievable, Relevant, and Time-bound. Define the numeric delta between current and target state.
+            </p>
+            <div class="timeline-pro-tip p-2 rounded bg-light border small text-muted">
+              <i class="fa-solid fa-lightbulb text-warning me-1"></i> <strong>Pro-Tip:</strong> Always declare a timeframe: e.g., "reduce wait times from 12m to 5m in 90 days".
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="timeline-item timeline-left" data-aos="fade-up">
+          <div class="timeline-badge-circle">
+            <span class="badge-num">5</span>
+          </div>
+          <div class="timeline-content p-4">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="timeline-icon text-indigo"><i class="fa-solid fa-brain"></i></span>
+              <h5 class="mb-0 fw-bold">5. Explore Solutions</h5>
+            </div>
+            <p class="text-muted small mb-2">
+              Keep problem and solution strictly decoupled. Generate multiple competing approaches before selecting the most feasible and high-impact strategy.
+            </p>
+            <div class="timeline-pro-tip p-2 rounded bg-light border small text-muted">
+              <i class="fa-solid fa-lightbulb text-warning me-1"></i> <strong>Pro-Tip:</strong> Consider non-software solutions too (e.g., process restructuring, better signage).
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="timeline-item timeline-right" data-aos="fade-up">
+          <div class="timeline-badge-circle">
+            <span class="badge-num">6</span>
+          </div>
+          <div class="timeline-content p-4">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="timeline-icon text-success"><i class="fa-solid fa-square-poll-vertical"></i></span>
+              <h5 class="mb-0 fw-bold">6. Measure Results</h5>
+            </div>
+            <p class="text-muted small mb-2">
+              Deploy the solution and continuously track the metrics established in Step 4. Validate whether the gap was actually closed or if adjustments are required.
+            </p>
+            <div class="timeline-pro-tip p-2 rounded bg-light border small text-muted">
+              <i class="fa-solid fa-lightbulb text-warning me-1"></i> <strong>Pro-Tip:</strong> Celebrate the win, document learnings, and iterate based on real feedback.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: SOLUTION-NEUTRAL PROBLEM STATEMENTS -->
+  <section id="solution-neutral" class="py-5 py-lg-6 section-alt">
+    <div class="container-xl">
+      <div class="section-header text-center mx-auto mb-5" style="max-width: 720px;">
+        <span class="section-badge"><i class="fa-solid fa-filter me-1"></i> Critical Best Practice</span>
+        <h2 class="section-title">“Don't Jump to the Solution”</h2>
+        <p class="section-subtitle">
+          “A strong problem statement should describe the gap between the current state and the desired state without assuming a particular solution.”
+        </p>
+      </div>
+
+      <!-- Interactive Toggle: Assumption vs Evidence -->
+      <div class="neutrality-toggle-wrapper text-center mb-4">
+        <div class="d-inline-flex flex-wrap align-items-center justify-content-center gap-2 p-2 bg-white rounded-pill shadow-sm border mb-3">
+          <span class="small fw-bold text-muted px-2"><i class="fa-solid fa-sliders me-1"></i> Mode:</span>
+          <button type="button" class="btn btn-sm rounded-pill px-3 active" id="btn-show-comparison">
+            <i class="fa-solid fa-code-compare me-1"></i> Side-by-Side
+          </button>
+          <button type="button" class="btn btn-sm rounded-pill px-3 btn-outline-danger" id="btn-toggle-assumption">
+            ❌ Assumption Lens
+          </button>
+          <button type="button" class="btn btn-sm rounded-pill px-3 btn-outline-success" id="btn-toggle-evidence">
+            ✅ Evidence Lens
+          </button>
+          <button type="button" class="btn btn-sm rounded-pill px-3" id="btn-show-neutral-examples">
+            <i class="fa-solid fa-layer-group me-1"></i> Industry Examples
+          </button>
+        </div>
+        <div class="small text-muted">
+          <span class="badge bg-danger-subtle text-danger px-2 py-1 me-1">Assumption</span>
+          <i class="fa-solid fa-arrow-right text-muted mx-1"></i>
+          <span class="badge bg-success-subtle text-success px-2 py-1 ms-1">Evidence</span>
+          <span class="ms-2">Shift from assuming a specific fix to objectively quantifying the performance gap.</span>
+        </div>
+      </div>
+
+      <!-- Comparison Cards View -->
+      <div id="comparison-view" class="row g-4 align-items-stretch">
+        <!-- ❌ Solution-Assuming -->
+        <div class="col-lg-6">
+          <div class="card h-100 solution-card solution-assuming-card border-danger-subtle p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="badge bg-danger text-white px-3 py-2 rounded-pill">
+                <i class="fa-solid fa-circle-xmark me-1"></i> ❌ Solution-Assuming (Biased)
+              </span>
+              <span class="text-danger small fw-semibold">Closes Minds</span>
+            </div>
+
+            <div class="statement-quote-box bad-quote p-3 rounded-3 mb-3">
+              <p class="lead-statement mb-0 fw-semibold text-danger">
+                “Customer wait times are high because the office has no digital queue system.”
+              </p>
+            </div>
+
+            <div class="analysis-explanation mb-4">
+              <h6 class="fw-bold text-dark mb-2"><i class="fa-solid fa-triangle-exclamation text-danger me-1"></i> Why this is flawed:</h6>
+              <p class="text-muted small mb-2">
+                This statement already assumes that a digital queue system is the answer. It presumes the conclusion before analyzing what causes the delay.
+              </p>
+              <ul class="text-muted small ps-3 mb-0">
+                <li>Locks the team into buying an expensive software system prematurely.</li>
+                <li>Ignores potential staff shortages, slow database lookups, or cumbersome forms.</li>
+                <li>Limits innovation and alternative low-cost interventions.</li>
+              </ul>
+            </div>
+
+            <div class="mt-auto pt-3 border-top d-flex align-items-center gap-2 text-danger small">
+              <i class="fa-solid fa-ban"></i> <strong>Trap:</strong> Problem stated as the absence of your pet solution.
+            </div>
+          </div>
+        </div>
+
+        <!-- ✅ Solution-Neutral -->
+        <div class="col-lg-6">
+          <div class="card h-100 solution-card solution-neutral-card border-success-subtle p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="badge bg-success text-white px-3 py-2 rounded-pill">
+                <i class="fa-solid fa-circle-check me-1"></i> ✅ Solution-Neutral (Objective)
+              </span>
+              <span class="text-success small fw-semibold">Opens Possibilities</span>
+            </div>
+
+            <div class="statement-quote-box good-quote p-3 rounded-3 mb-3">
+              <p class="lead-statement mb-0 fw-semibold text-success">
+                “Customer wait times average 12 minutes, well above the 5-minute target.”
+              </p>
+            </div>
+
+            <div class="analysis-explanation mb-4">
+              <h6 class="fw-bold text-dark mb-2"><i class="fa-solid fa-circle-check text-success me-1"></i> Why this is powerful:</h6>
+              <p class="text-muted small mb-2">
+                This allows stakeholders to consider multiple possible solutions. It anchors the conversation around factual data and targets.
+              </p>
+              <ul class="text-muted small ps-3 mb-0">
+                <li>Invites creative brainstorms (staggered shifts, pre-arrival forms, SMS notifications).</li>
+                <li>Focuses strictly on the delta: 12 minutes down to 5 minutes.</li>
+                <li>Allows objective testing to determine which solution is most cost-effective.</li>
+              </ul>
+            </div>
+
+            <div class="mt-auto pt-3 border-top d-flex align-items-center gap-2 text-success small">
+              <i class="fa-solid fa-bullseye"></i> <strong>Success:</strong> Focuses on the gap, welcoming all viable solutions.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Industry Examples View (Toggled) -->
+      <div id="industry-examples-view" class="d-none">
+        <div class="row g-4">
+          <!-- Example 1: EdTech -->
+          <div class="col-md-6 col-lg-4">
+            <div class="industry-card p-4 h-100 bg-white rounded-4 border shadow-sm">
+              <div class="badge bg-primary-subtle text-primary mb-3">Education / EdTech</div>
+              <div class="bad-block mb-3 p-2 bg-danger-subtle rounded text-danger small">
+                <strong>❌ Biased:</strong> Students fail exams because we don't have an AI tutoring app.
+              </div>
+              <div class="good-block p-2 bg-success-subtle rounded text-success small">
+                <strong>✅ Neutral:</strong> 34% of students score below proficiency in algebra, 15% below the district target.
+              </div>
+            </div>
+          </div>
+
+          <!-- Example 2: Healthcare -->
+          <div class="col-md-6 col-lg-4">
+            <div class="industry-card p-4 h-100 bg-white rounded-4 border shadow-sm">
+              <div class="badge bg-info-subtle text-info mb-3">Healthcare / Clinic</div>
+              <div class="bad-block mb-3 p-2 bg-danger-subtle rounded text-danger small">
+                <strong>❌ Biased:</strong> Patients miss appointments because we lack a mobile reminder app.
+              </div>
+              <div class="good-block p-2 bg-success-subtle rounded text-success small">
+                <strong>✅ Neutral:</strong> Clinic no-show rates stand at 28%, resulting in $42,000 monthly wasted capacity.
+              </div>
+            </div>
+          </div>
+
+          <!-- Example 3: Logistics / E-Commerce -->
+          <div class="col-md-6 col-lg-4">
+            <div class="industry-card p-4 h-100 bg-white rounded-4 border shadow-sm">
+              <div class="badge bg-warning-subtle text-warning mb-3">Logistics & Supply</div>
+              <div class="bad-block mb-3 p-2 bg-danger-subtle rounded text-danger small">
+                <strong>❌ Biased:</strong> Warehouse workers take too long because they don't use barcode scanners.
+              </div>
+              <div class="good-block p-2 bg-success-subtle rounded text-success small">
+                <strong>✅ Neutral:</strong> Order fulfillment averages 48 hours, missing the 24-hour customer delivery promise.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10: PURPOSE AND BENEFITS -->
+  <section id="benefits" class="py-5 py-lg-6">
+    <div class="container-xl">
+      <div class="section-header text-center mx-auto mb-5" style="max-width: 720px;">
+        <span class="section-badge"><i class="fa-solid fa-gem me-1"></i> Strategic Advantage</span>
+        <h2 class="section-title">Why Use a Problem-Solution Statement?</h2>
+        <p class="section-subtitle">
+          “Problem-solution statements transform vague complaints into actionable plans.”
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Faster Decision-Making -->
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card h-100 p-4">
+            <div class="benefit-icon-box text-warning bg-warning-subtle mb-3">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Faster Decision-Making</h5>
+            <p class="text-muted small mb-0">
+              Cuts through endless circular debates by aligning leadership and contributors on the exact, verifiable challenge.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Better Resource Allocation -->
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card h-100 p-4">
+            <div class="benefit-icon-box text-success bg-success-subtle mb-3">
+              <i class="fa-solid fa-coins"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Better Resource Allocation</h5>
+            <p class="text-muted small mb-0">
+              Prevents investing thousands of engineering hours and capital into building features that don't move the needle.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Focused Problem Solving -->
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card h-100 p-4">
+            <div class="benefit-icon-box text-danger bg-danger-subtle mb-3">
+              <i class="fa-solid fa-crosshairs"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Focused Problem Solving</h5>
+            <p class="text-muted small mb-0">
+              Keeps teams anchored to the root cause, filtering out distracting pet ideas and scope creep throughout development.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. Improved Team Alignment -->
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card h-100 p-4">
+            <div class="benefit-icon-box text-primary bg-primary-subtle mb-3">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Improved Team Alignment</h5>
+            <p class="text-muted small mb-0">
+              Establishes a shared vocabulary between engineers, designers, executives, and end-users with no ambiguity.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5. Measurable Outcomes -->
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card h-100 p-4">
+            <div class="benefit-icon-box text-info bg-info-subtle mb-3">
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Measurable Outcomes</h5>
+            <p class="text-muted small mb-0">
+              Provides auditable KPIs and benchmarks to judge objectively whether an intervention succeeded or needs iteration.
+            </p>
+          </div>
+        </div>
+
+        <!-- 6. Fewer Ineffective Solutions -->
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card h-100 p-4">
+            <div class="benefit-icon-box text-indigo bg-indigo-subtle mb-3">
+              <i class="fa-solid fa-ban"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Fewer Ineffective Solutions</h5>
+            <p class="text-muted small mb-0">
+              Eliminates the common tragedy of building technically impressive products that nobody wants or uses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 11: COMMON MISTAKES (AVOID THESE MISTAKES) -->
+  <section id="mistakes" class="py-5 py-lg-6 section-alt">
+    <div class="container-xl">
+      <div class="section-header text-center mx-auto mb-5" style="max-width: 720px;">
+        <span class="section-badge"><i class="fa-solid fa-triangle-exclamation me-1"></i> Watch Out For Traps</span>
+        <h2 class="section-title">Avoid These 10 Common Mistakes</h2>
+        <p class="section-subtitle">
+          Learn how to spot and fix the most frequent errors that derail problem statements in pitch decks, product specs, and academic papers.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Mistake 1 -->
+        <div class="col-lg-6">
+          <div class="mistake-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="mistake-badge">❌ Mistake 01</span>
+              <h5 class="mb-0 fw-bold">Focusing only on symptoms</h5>
+            </div>
+            <div class="mistake-breakdown">
+              <div class="mb-2"><span class="breakdown-label text-danger">Problem:</span> Addressing surface-level effects rather than root issues.</div>
+              <div class="mb-2"><span class="breakdown-label text-warning">Why it matters:</span> The problem will keep reappearing because its true cause remains untouched.</div>
+              <div><span class="breakdown-label text-success">Better approach:</span> Use the 5 Whys technique to dig past immediate complaints into systemic drivers.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mistake 2 -->
+        <div class="col-lg-6">
+          <div class="mistake-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="mistake-badge">❌ Mistake 02</span>
+              <h5 class="mb-0 fw-bold">Being too vague</h5>
+            </div>
+            <div class="mistake-breakdown">
+              <div class="mb-2"><span class="breakdown-label text-danger">Problem:</span> Using generalizations like "the user experience is clunky" or "inefficient".</div>
+              <div class="mb-2"><span class="breakdown-label text-warning">Why it matters:</span> Different team members will imagine different problems and build divergent solutions.</div>
+              <div><span class="breakdown-label text-success">Better approach:</span> Specify exact steps, error codes, drop-off percentages, and durations.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mistake 3 -->
+        <div class="col-lg-6">
+          <div class="mistake-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="mistake-badge">❌ Mistake 03</span>
+              <h5 class="mb-0 fw-bold">Jumping to a solution too early</h5>
+            </div>
+            <div class="mistake-breakdown">
+              <div class="mb-2"><span class="breakdown-label text-danger">Problem:</span> Sneaking the preferred solution into the problem formulation itself.</div>
+              <div class="mb-2"><span class="breakdown-label text-warning">Why it matters:</span> Blinds the organization to cheaper, simpler, or more effective alternatives.</div>
+              <div><span class="breakdown-label text-success">Better approach:</span> Describe the gap and evidence without mentioning any tools or technologies.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mistake 4 -->
+        <div class="col-lg-6">
+          <div class="mistake-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="mistake-badge">❌ Mistake 04</span>
+              <h5 class="mb-0 fw-bold">Using opinions instead of facts</h5>
+            </div>
+            <div class="mistake-breakdown">
+              <div class="mb-2"><span class="breakdown-label text-danger">Problem:</span> Relying on gut feelings, hearsay, or personal annoyance ("Nobody likes this page").</div>
+              <div class="mb-2"><span class="breakdown-label text-warning">Why it matters:</span> Opinion-based statements fail to persuade stakeholders and lead to biased work.</div>
+              <div><span class="breakdown-label text-success">Better approach:</span> Ground every assertion in analytics, user interviews, tickets, or audit metrics.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mistake 5 -->
+        <div class="col-lg-6">
+          <div class="mistake-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="mistake-badge">❌ Mistake 05</span>
+              <h5 class="mb-0 fw-bold">Ignoring important stakeholders</h5>
+            </div>
+            <div class="mistake-breakdown">
+              <div class="mb-2"><span class="breakdown-label text-danger">Problem:</span> Framing the problem solely from management's perspective while ignoring front-line users.</div>
+              <div class="mb-2"><span class="breakdown-label text-warning">Why it matters:</span> Solutions get rejected or sabotaged by the very people expected to use them.</div>
+              <div><span class="breakdown-label text-success">Better approach:</span> Map all impacted cohorts: primary users, operators, administrators, and clients.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mistake 6 -->
+        <div class="col-lg-6">
+          <div class="mistake-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="mistake-badge">❌ Mistake 06</span>
+              <h5 class="mb-0 fw-bold">Setting unrealistic expectations</h5>
+            </div>
+            <div class="mistake-breakdown">
+              <div class="mb-2"><span class="breakdown-label text-danger">Problem:</span> Demanding "zero errors forever" or "instant 100% adoption".</div>
+              <div class="mb-2"><span class="breakdown-label text-warning">Why it matters:</span> Sets the team up for perceived failure even after massive tangible progress.</div>
+              <div><span class="breakdown-label text-success">Better approach:</span> Set pragmatic, phased targets based on industry standards and capacity.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mistake 7 -->
+        <div class="col-lg-6">
+          <div class="mistake-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="mistake-badge">❌ Mistake 07</span>
+              <h5 class="mb-0 fw-bold">Missing measurable success criteria</h5>
+            </div>
+            <div class="mistake-breakdown">
+              <div class="mb-2"><span class="breakdown-label text-danger">Problem:</span> Concluding with "to make things better" without a single numeric benchmark.</div>
+              <div class="mb-2"><span class="breakdown-label text-warning">Why it matters:</span> You will never be able to prove whether the project was worth the money.</div>
+              <div><span class="breakdown-label text-success">Better approach:</span> Explicitly write: "reduce X from [Baseline] to [Target] by [Date]".</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mistake 8 -->
+        <div class="col-lg-6">
+          <div class="mistake-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="mistake-badge">❌ Mistake 08</span>
+              <h5 class="mb-0 fw-bold">Assuming one solution is automatically correct</h5>
+            </div>
+            <div class="mistake-breakdown">
+              <div class="mb-2"><span class="breakdown-label text-danger">Problem:</span> Believing that because an idea is cool or trendy (e.g. AI/Blockchain), it must be used.</div>
+              <div class="mb-2"><span class="breakdown-label text-warning">Why it matters:</span> Leads to "solution in search of a problem" syndrome and immense tech debt.</div>
+              <div><span class="breakdown-label text-success">Better approach:</span> Brainstorm at least 3 distinct conceptual solutions and trade-off their costs.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mistake 9 -->
+        <div class="col-lg-6">
+          <div class="mistake-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="mistake-badge">❌ Mistake 09</span>
+              <h5 class="mb-0 fw-bold">Not validating with people experiencing it</h5>
+            </div>
+            <div class="mistake-breakdown">
+              <div class="mb-2"><span class="breakdown-label text-danger">Problem:</span> Writing statements in an ivory tower conference room without talking to end-users.</div>
+              <div class="mb-2"><span class="breakdown-label text-warning">Why it matters:</span> You solve an imaginary version of the problem while the real crisis festers.</div>
+              <div><span class="breakdown-label text-success">Better approach:</span> Conduct at least 5 observational user interviews before drafting your final version.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mistake 10 -->
+        <div class="col-lg-6">
+          <div class="mistake-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="mistake-badge">❌ Mistake 10</span>
+              <h5 class="mb-0 fw-bold">Failing to update as conditions change</h5>
+            </div>
+            <div class="mistake-breakdown">
+              <div class="mb-2"><span class="breakdown-label text-danger">Problem:</span> Treating the statement as an immutable carved-in-stone document.</div>
+              <div class="mb-2"><span class="breakdown-label text-warning">Why it matters:</span> As market dynamics, user demographics, or policies shift, the statement becomes obsolete.</div>
+              <div><span class="breakdown-label text-success">Better approach:</span> Review and refine the problem statement at every major sprint or milestone gate.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 12: REAL-WORLD EXAMPLE (CASE STUDY) -->
+  <section id="example" class="py-5 py-lg-6">
+    <div class="container-xl">
+      <div class="section-header text-center mx-auto mb-5" style="max-width: 720px;">
+        <span class="section-badge"><i class="fa-solid fa-magnifying-glass me-1"></i> Concrete Application</span>
+        <h2 class="section-title">Real-World Case Study</h2>
+        <p class="section-subtitle">
+          See how an actual operational challenge is broken down cleanly using our framework.
+        </p>
+      </div>
+
+      <!-- Case Study Navigation Tabs -->
+      <ul class="nav nav-pills justify-content-center mb-4 gap-2" id="caseStudyTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active rounded-pill px-4" id="wait-time-tab" data-bs-toggle="pill" data-bs-target="#wait-time-pane" type="button" role="tab" aria-selected="true">
+            <i class="fa-solid fa-hospital-user me-1"></i> Customer Waiting Time
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4" id="onboarding-tab" data-bs-toggle="pill" data-bs-target="#onboarding-pane" type="button" role="tab" aria-selected="false">
+            <i class="fa-solid fa-laptop-code me-1"></i> SaaS User Drop-off
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="caseStudyContent">
+        <!-- Tab 1: Customer Waiting Time -->
+        <div class="tab-pane fade show active" id="wait-time-pane" role="tabpanel" tabindex="0">
+          <div class="case-study-card p-4 p-lg-5">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-7">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <span class="badge bg-danger-subtle text-danger px-3 py-1">Case Study: Service Operations</span>
+                  <span class="text-muted small">Branch Support Desk</span>
+                </div>
+                <h3 class="fw-bold mb-3">Customer Waiting Time Crisis</h3>
+
+                <!-- Situation & Evidence -->
+                <div class="mb-4">
+                  <h6 class="fw-bold text-dark"><i class="fa-solid fa-circle-info text-primary me-2"></i>Situation</h6>
+                  <p class="text-muted small">
+                    Customers are waiting too long for service at branch locations, resulting in walkouts and dropping satisfaction scores.
+                  </p>
+                </div>
+
+                <div class="row g-3 mb-4">
+                  <div class="col-sm-6">
+                    <div class="p-3 bg-light rounded-3 border">
+                      <div class="text-muted small">Current Average Waiting Time</div>
+                      <div class="display-6 fw-bold text-danger">12 min</div>
+                      <div class="text-danger small"><i class="fa-solid fa-triangle-exclamation"></i> 140% above allowable ceiling</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="p-3 bg-light rounded-3 border">
+                      <div class="text-muted small">Target Waiting Time</div>
+                      <div class="display-6 fw-bold text-success">5 min</div>
+                      <div class="text-success small"><i class="fa-solid fa-bullseye"></i> Goal threshold</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Stakeholders -->
+                <div class="mb-4">
+                  <h6 class="fw-bold text-dark"><i class="fa-solid fa-users text-primary me-2"></i>Stakeholders Impacted</h6>
+                  <div class="d-flex flex-wrap gap-2 mt-1">
+                    <span class="badge bg-white text-dark border px-3 py-2"><i class="fa-solid fa-person-walking me-1"></i> Customers (Frustrated by delays)</span>
+                    <span class="badge bg-white text-dark border px-3 py-2"><i class="fa-solid fa-user-nurse me-1"></i> Front-desk employees (Stressed & overwhelmed)</span>
+                    <span class="badge bg-white text-dark border px-3 py-2"><i class="fa-solid fa-chart-pie me-1"></i> Managers (Missing SLA metrics)</span>
+                  </div>
+                </div>
+
+                <!-- Possible Root Causes -->
+                <div class="mb-4">
+                  <h6 class="fw-bold text-dark"><i class="fa-solid fa-sitemap text-primary me-2"></i>Identified Root Causes</h6>
+                  <ul class="text-muted small ps-3 mb-0">
+                    <li><strong>Inefficient process:</strong> Customers fill paper forms at the desk rather than prior to arrival.</li>
+                    <li><strong>Uneven staffing:</strong> Staff lunches coincide directly with peak 12:00–2:00 PM walk-in rush.</li>
+                    <li><strong>Manual registration:</strong> Staff manually re-type driver license numbers into mainframe.</li>
+                    <li><strong>Peak-hour congestion:</strong> No triage desk to route 1-minute quick inquiries away from complex cases.</li>
+                  </ul>
+                </div>
+
+                <!-- Desired Outcome -->
+                <div class="p-3 bg-success-subtle rounded-3 border border-success-subtle">
+                  <div class="fw-bold text-success mb-1"><i class="fa-solid fa-flag-checkered me-2"></i>Desired Outcome:</div>
+                  <p class="text-success-emphasis small mb-0">
+                    Reduce average waiting time from <strong>12 minutes → 5 minutes</strong> and increase CSAT from 58% to 88% within 90 days of process optimization.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Right: Visual Gap Chart -->
+              <div class="col-lg-5">
+                <div class="case-study-chart-card p-4 bg-white rounded-4 border shadow-sm">
+                  <h5 class="fw-bold text-center mb-4">Waiting Time Gap Analysis</h5>
+
+                  <div class="chart-bar-group mb-4">
+                    <div class="d-flex justify-content-between small fw-semibold mb-1">
+                      <span>Current Reality</span>
+                      <span class="text-danger">12 Minutes</span>
+                    </div>
+                    <div class="progress" style="height: 28px;">
+                      <div class="progress-bar bg-danger fw-bold" role="progressbar" style="width: 100%">12 min</div>
+                    </div>
+                  </div>
+
+                  <div class="chart-bar-group mb-4">
+                    <div class="d-flex justify-content-between small fw-semibold mb-1">
+                      <span>Target Goal</span>
+                      <span class="text-success">5 Minutes</span>
+                    </div>
+                    <div class="progress" style="height: 28px;">
+                      <div class="progress-bar bg-success fw-bold" role="progressbar" style="width: 41.6%">5 min</div>
+                    </div>
+                  </div>
+
+                  <div class="gap-reduction-metric p-3 rounded-3 bg-light text-center border">
+                    <div class="small text-muted">The Gap To Eliminate:</div>
+                    <div class="display-6 fw-bold text-primary">7 min (58%)</div>
+                    <div class="small text-muted mt-1">Through triage routing & staggered shift adjustments</div>
+                  </div>
+
+                  <div class="case-study-quote mt-4 p-3 bg-primary-subtle rounded-3 text-primary-emphasis small">
+                    <i class="fa-solid fa-quote-left me-1"></i>
+                    <strong>Synthesis Statement:</strong> Branch visitors face an average waiting time of 12 minutes—over double our 5-minute standard—causing customer churn and employee fatigue. By addressing manual registration bottlenecks and staffing mismatches, we can achieve sub-5-minute turnarounds within 90 days.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: SaaS User Drop-off -->
+        <div class="tab-pane fade" id="onboarding-pane" role="tabpanel" tabindex="0">
+          <div class="case-study-card p-4 p-lg-5">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-7">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <span class="badge bg-primary-subtle text-primary px-3 py-1">Case Study: Software / Tech</span>
+                  <span class="text-muted small">Product Activation</span>
+                </div>
+                <h3 class="fw-bold mb-3">SaaS Activation Funnel Collapse</h3>
+
+                <div class="mb-4">
+                  <h6 class="fw-bold text-dark"><i class="fa-solid fa-circle-info text-primary me-2"></i>Situation</h6>
+                  <p class="text-muted small">
+                    New users who sign up for the platform abandon the tool before completing initial project setup, burning acquisition spend.
+                  </p>
+                </div>
+
+                <div class="row g-3 mb-4">
+                  <div class="col-sm-6">
+                    <div class="p-3 bg-light rounded-3 border">
+                      <div class="text-muted small">Current Day-1 Drop-off</div>
+                      <div class="display-6 fw-bold text-danger">68%</div>
+                      <div class="text-danger small"><i class="fa-solid fa-triangle-exclamation"></i> Only 32% complete onboarding</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="p-3 bg-light rounded-3 border">
+                      <div class="text-muted small">Target Day-1 Drop-off</div>
+                      <div class="display-6 fw-bold text-success">25%</div>
+                      <div class="text-success small"><i class="fa-solid fa-bullseye"></i> Goal: 75% activation</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <h6 class="fw-bold text-dark"><i class="fa-solid fa-users text-primary me-2"></i>Stakeholders Impacted</h6>
+                  <div class="d-flex flex-wrap gap-2 mt-1">
+                    <span class="badge bg-white text-dark border px-3 py-2">Trial Users (Frustrated by 14-field form)</span>
+                    <span class="badge bg-white text-dark border px-3 py-2">Growth Marketers (Wasted CAC spend)</span>
+                    <span class="badge bg-white text-dark border px-3 py-2">Product Leaders (Depressed LTV:CAC ratio)</span>
+                  </div>
+                </div>
+
+                <div class="p-3 bg-success-subtle rounded-3 border border-success-subtle">
+                  <div class="fw-bold text-success mb-1"><i class="fa-solid fa-flag-checkered me-2"></i>Desired Outcome:</div>
+                  <p class="text-success-emphasis small mb-0">
+                    Reduce Day-1 drop-off from <strong>68% to 25%</strong> by adopting progressive profiling and interactive interactive template starters within 60 days.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-5">
+                <div class="case-study-chart-card p-4 bg-white rounded-4 border shadow-sm text-center">
+                  <h5 class="fw-bold mb-3">Onboarding Retention Delta</h5>
+                  <div class="display-5 fw-bold text-primary my-3">+43%</div>
+                  <p class="text-muted small mb-4">Projected active trial users unlocked by eliminating friction.</p>
+                  <div class="p-3 bg-light rounded-3 text-start small text-muted">
+                    <strong>Drafted Statement:</strong> "68% of newly registered users abandon setup before reaching their first core action due to compulsory multi-page data entry. By introducing instant-preview templates, we will lift Day-1 activation to 75% within 60 days."
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 13: PROBLEM-SOLUTION STATEMENT FORMULA -->
+  <section id="formula" class="py-5 py-lg-6 section-alt">
+    <div class="container-xl">
+      <div class="section-header text-center mx-auto mb-5" style="max-width: 720px;">
+        <span class="section-badge"><i class="fa-solid fa-square-root-variable me-1"></i> The Magic Blueprint</span>
+        <h2 class="section-title">The Problem-Solution Statement Formula</h2>
+        <p class="section-subtitle">
+          Use this battle-tested formula to craft clear, memorable statements in minutes.
+        </p>
+      </div>
+
+      <!-- Master Formula Banner -->
+      <div class="master-formula-card p-4 p-md-5 mb-5 text-center">
+        <span class="badge bg-primary text-white rounded-pill px-3 py-1 mb-3">Standard Universal Formula</span>
+        <blockquote class="master-formula-quote">
+          “The problem of <span class="formula-var-highlight var-problem" id="fv-problem">[describe issue]</span>
+          affects <span class="formula-var-highlight var-stakeholders" id="fv-stakeholders">[stakeholders]</span>,
+          resulting in <span class="formula-var-highlight var-impact" id="fv-impact">[negative impacts]</span>.
+          By implementing <span class="formula-var-highlight var-solution" id="fv-solution">[solution approach]</span>,
+          we can achieve <span class="formula-var-highlight var-outcome" id="fv-outcome">[specific outcomes]</span>.”
+        </blockquote>
+        <p class="text-muted small mt-3 mb-0">
+          <i class="fa-regular fa-hand-pointer me-1"></i> Click on any card below to see how that variable functions.
+        </p>
+      </div>
+
+      <!-- Colorful Cards Breaking Down The Formula -->
+      <div class="row g-3" id="formulaBlocks">
+        <!-- Block 1: Problem -->
+        <div class="col-md">
+          <div class="formula-block-card block-problem p-3 h-100" data-target="fv-problem">
+            <div class="block-badge text-danger"><i class="fa-solid fa-triangle-exclamation me-1"></i> Variable 1</div>
+            <h6 class="fw-bold mt-2">[describe issue]</h6>
+            <p class="small text-muted mb-2">The factual gap or breakdown happening right now.</p>
+            <div class="block-example small text-danger-emphasis bg-white p-2 rounded border">
+              e.g., "12-minute wait times during branch check-in"
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 2: Stakeholders -->
+        <div class="col-md">
+          <div class="formula-block-card block-stakeholders p-3 h-100" data-target="fv-stakeholders">
+            <div class="block-badge text-warning"><i class="fa-solid fa-users me-1"></i> Variable 2</div>
+            <h6 class="fw-bold mt-2">[stakeholders]</h6>
+            <p class="small text-muted mb-2">The group of people bearing the burden of this issue.</p>
+            <div class="block-example small text-warning-emphasis bg-white p-2 rounded border">
+              e.g., "visiting branch customers and desk agents"
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 3: Negative Impacts -->
+        <div class="col-md">
+          <div class="formula-block-card block-impact p-3 h-100" data-target="fv-impact">
+            <div class="block-badge text-danger"><i class="fa-solid fa-chart-line-down me-1"></i> Variable 3</div>
+            <h6 class="fw-bold mt-2">[negative impacts]</h6>
+            <p class="small text-muted mb-2">The quantifiable pain, monetary loss, or churn.</p>
+            <div class="block-example small text-danger-emphasis bg-white p-2 rounded border">
+              e.g., "a 14% customer walkout rate and $28k in lost revenue"
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 4: Solution Approach -->
+        <div class="col-md">
+          <div class="formula-block-card block-solution p-3 h-100" data-target="fv-solution">
+            <div class="block-badge text-primary"><i class="fa-solid fa-compass-drafting me-1"></i> Variable 4</div>
+            <h6 class="fw-bold mt-2">[solution approach]</h6>
+            <p class="small text-muted mb-2">The targeted strategic intervention that addresses the root cause.</p>
+            <div class="block-example small text-primary-emphasis bg-white p-2 rounded border">
+              e.g., "pre-arrival digital check-ins and express triage desks"
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 5: Specific Outcomes -->
+        <div class="col-md">
+          <div class="formula-block-card block-outcome p-3 h-100" data-target="fv-outcome">
+            <div class="block-badge text-success"><i class="fa-solid fa-trophy me-1"></i> Variable 5</div>
+            <h6 class="fw-bold mt-2">[specific outcomes]</h6>
+            <p class="small text-muted mb-2">The measurable success criteria and verifiable end-state.</p>
+            <div class="block-example small text-success-emphasis bg-white p-2 rounded border">
+              e.g., "an average wait under 5 minutes and a 90% CSAT score"
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 14: INTERACTIVE STATEMENT BUILDER (CORE FEATURE) -->
+  <section id="builder" class="py-5 py-lg-6">
+    <div class="container-xl">
+      <div class="section-header text-center mx-auto mb-5" style="max-width: 720px;">
+        <span class="section-badge"><i class="fa-solid fa-wand-magic-sparkles me-1"></i> Interactive Tool</span>
+        <h2 class="section-title">Build Your Problem-Solution Statement</h2>
+        <p class="section-subtitle">
+          Fill in the structured fields below. Our generator will synthesize a polished, executive-ready statement ready for presentations and proposals.
+        </p>
+      </div>
+
+      <!-- Quick Template Loaders -->
+      <div class="builder-presets text-center mb-4">
+        <span class="text-muted small me-2"><i class="fa-solid fa-bolt text-warning me-1"></i> Quick Presets:</span>
+        <div class="btn-group flex-wrap" role="group">
+          <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill me-2 mb-2" id="preset-clinic">
+            🏥 Clinic Wait Times
+          </button>
+          <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill me-2 mb-2" id="preset-student">
+            🎓 Student Course Dropouts
+          </button>
+          <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill mb-2" id="preset-saas">
+            💼 SaaS User Onboarding
+          </button>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Form Column -->
+        <div class="col-lg-6">
+          <div class="builder-form-card p-4 p-md-5 h-100">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <h5 class="fw-bold mb-0">Input Fields</h5>
+              <button type="button" class="btn btn-outline-danger btn-sm rounded-pill" id="btn-clear-builder">
+                <i class="fa-solid fa-rotate-left me-1"></i> Clear Form
+              </button>
+            </div>
+
+            <form id="statementForm" novalidate>
+              <!-- Field 1: Problem -->
+              <div class="mb-3">
+                <label for="inputProblem" class="form-label fw-semibold">
+                  1. What is the problem? <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control custom-input" id="inputProblem" placeholder="e.g. Customers experience long wait times averaging 12 minutes" required>
+                <div class="form-text">Describe the exact breakdown without assuming solutions.</div>
+              </div>
+
+              <!-- Field 2: Stakeholders -->
+              <div class="mb-3">
+                <label for="inputStakeholders" class="form-label fw-semibold">
+                  2. Who is affected? <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control custom-input" id="inputStakeholders" placeholder="e.g. In-person branch visitors and front-desk staff" required>
+                <div class="form-text">Identify the key people bearing the brunt of the issue.</div>
+              </div>
+
+              <!-- Field 3: Impact -->
+              <div class="mb-3">
+                <label for="inputImpact" class="form-label fw-semibold">
+                  3. What is the impact? <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control custom-input" id="inputImpact" placeholder="e.g. 18% walkout rate and customer satisfaction dropping to 54%" required>
+                <div class="form-text">Mention financial losses, hours wasted, or emotional distress.</div>
+              </div>
+
+              <!-- Field 4: Root Cause -->
+              <div class="mb-3">
+                <label for="inputRootCause" class="form-label fw-semibold">
+                  4. What is the root cause? <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control custom-input" id="inputRootCause" placeholder="e.g. Manual paper registration and mismatched peak staffing hours" required>
+                <div class="form-text">The deep underlying reason discovered through the 5 Whys.</div>
+              </div>
+
+              <!-- Field 5: Measurable Improvement -->
+              <div class="mb-3">
+                <label for="inputImprovement" class="form-label fw-semibold">
+                  5. What measurable improvement do you want? <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control custom-input" id="inputImprovement" placeholder="e.g. Reduce average wait time from 12 minutes to under 5 minutes" required>
+                <div class="form-text">Your SMART numerical target baseline vs goal.</div>
+              </div>
+
+              <!-- Field 6: Proposed Solution -->
+              <div class="mb-3">
+                <label for="inputSolution" class="form-label fw-semibold">
+                  6. What solution are you considering? <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control custom-input" id="inputSolution" placeholder="e.g. Staggered shift schedules and pre-arrival digital check-ins" required>
+                <div class="form-text">The intervention crafted specifically for the root cause.</div>
+              </div>
+
+              <!-- Field 7: Success Criteria -->
+              <div class="mb-4">
+                <label for="inputSuccess" class="form-label fw-semibold">
+                  7. What will success look like? <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control custom-input" id="inputSuccess" placeholder="e.g. 92% customer satisfaction and zero walkouts due to wait times" required>
+                <div class="form-text">The verifiable end state confirming the gap was bridged.</div>
+              </div>
+
+              <button type="submit" class="btn btn-primary-gradient btn-lg w-100" id="btn-generate">
+                <i class="fa-solid fa-wand-magic-sparkles me-2"></i> Generate Statement
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Generated Output Card Column -->
+        <div class="col-lg-6">
+          <div class="output-preview-card p-4 p-md-5 h-100 d-flex flex-column">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <div class="d-flex align-items-center gap-2">
+                <span class="status-indicator-dot"></span>
+                <h5 class="fw-bold mb-0">Generated Statement</h5>
+              </div>
+              <div class="view-mode-selector">
+                <div class="btn-group btn-group-sm" role="group">
+                  <button type="button" class="btn btn-outline-primary active" id="btn-view-standard">Standard</button>
+                  <button type="button" class="btn btn-outline-primary" id="btn-view-formula">Formula</button>
+                  <button type="button" class="btn btn-outline-primary" id="btn-view-bulleted">Pitch Deck</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Statement Content Box -->
+            <div id="statementResultBox" class="statement-display-box p-4 rounded-4 mb-4 flex-grow-1">
+              <div class="empty-state text-center py-5 text-muted">
+                <div class="empty-icon mb-3 text-secondary">
+                  <i class="fa-solid fa-feather-pointed fa-3x"></i>
+                </div>
+                <h6 class="fw-bold">Your Statement Will Appear Here</h6>
+                <p class="small mb-3">Fill out the form on the left or click one of the quick presets to immediately see a synthesized statement.</p>
+                <button type="button" class="btn btn-outline-primary btn-sm rounded-pill" onclick="document.getElementById('preset-clinic').click()">
+                  <i class="fa-solid fa-wand-magic-sparkles me-1"></i> Try Clinic Preset
+                </button>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="statement-actions d-flex flex-wrap gap-2 pt-3 border-top mt-auto">
+              <button type="button" class="btn btn-primary flex-grow-1" id="btn-copy-statement" disabled>
+                <i class="fa-regular fa-copy me-1"></i> Copy Statement
+              </button>
+              <button type="button" class="btn btn-outline-secondary" id="btn-edit-statement" disabled>
+                <i class="fa-solid fa-pen-to-square me-1"></i> Edit Form
+              </button>
+              <button type="button" class="btn btn-outline-dark" id="btn-download-txt" disabled title="Download Statement">
+                <i class="fa-solid fa-download me-1"></i> Save TXT
+              </button>
+            </div>
+            <div id="copyAlertMessage" class="copy-alert text-success small fw-semibold mt-2 text-center d-none">
+              <i class="fa-solid fa-circle-check me-1"></i> Copied successfully to clipboard!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 15: STATEMENT QUALITY CHECKER -->
+  <section id="checker" class="py-5 py-lg-6 section-alt">
+    <div class="container-xl">
+      <div class="section-header text-center mx-auto mb-5" style="max-width: 720px;">
+        <span class="section-badge"><i class="fa-solid fa-shield-halved me-1"></i> Automated Heuristics</span>
+        <h2 class="section-title">Check Your Statement Quality</h2>
+        <p class="section-subtitle">
+          Paste any existing problem statement below to evaluate its strength, clarity, stakeholder impact, and solution-neutrality.
+        </p>
+      </div>
+
+      <div class="checker-container p-4 p-md-5 bg-white rounded-4 border shadow-sm">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="mb-3 d-flex justify-content-between align-items-center">
+              <label for="customStatementInput" class="form-label fw-bold mb-0">Paste Statement to Analyze:</label>
+              <div class="d-flex gap-2">
+                <button type="button" class="btn btn-sm btn-outline-danger rounded-pill" id="btn-test-weak">
+                  Test Weak Example
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-success rounded-pill" id="btn-test-strong">
+                  Test Strong Example
+                </button>
+              </div>
+            </div>
+
+            <textarea class="form-control custom-textarea mb-3" id="customStatementInput" rows="7" placeholder="Type or paste your problem statement here to evaluate its effectiveness..."></textarea>
+
+            <button type="button" class="btn btn-primary-gradient w-100" id="btn-analyze-statement">
+              <i class="fa-solid fa-magnifying-glass-chart me-1"></i> Analyze Statement
+            </button>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="analysis-results-box p-4 rounded-4 bg-light border h-100">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="fw-bold mb-0">Quality Analysis Score</h6>
+                <div id="qualityScoreBadge" class="badge bg-secondary px-3 py-2 rounded-pill fs-6">
+                  Ready to test
+                </div>
+              </div>
+
+              <div class="progress mb-4" style="height: 12px;">
+                <div id="qualityProgressBar" class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <!-- Checklist of 7 Core Dimensions -->
+              <div class="analysis-checklist" id="analysisChecklist">
+                <div class="analysis-item" id="check-problem">
+                  <i class="fa-regular fa-circle text-muted"></i>
+                  <span>Clear Problem Identified</span>
+                </div>
+                <div class="analysis-item" id="check-stakeholders">
+                  <i class="fa-regular fa-circle text-muted"></i>
+                  <span>Stakeholders Specified</span>
+                </div>
+                <div class="analysis-item" id="check-impact">
+                  <i class="fa-regular fa-circle text-muted"></i>
+                  <span>Impact & Pain Quantified</span>
+                </div>
+                <div class="analysis-item" id="check-rootcause">
+                  <i class="fa-regular fa-circle text-muted"></i>
+                  <span>Root Cause Addressed</span>
+                </div>
+                <div class="analysis-item" id="check-objective">
+                  <i class="fa-regular fa-circle text-muted"></i>
+                  <span>Measurable Objective / Numbers Included</span>
+                </div>
+                <div class="analysis-item" id="check-outcome">
+                  <i class="fa-regular fa-circle text-muted"></i>
+                  <span>Expected Outcome / Success Criteria Defined</span>
+                </div>
+                <div class="analysis-item" id="check-neutrality">
+                  <i class="fa-regular fa-circle text-muted"></i>
+                  <span>Solution-Neutral (Avoids Prejudging Fix)</span>
+                </div>
+              </div>
+
+              <!-- Suggestions Container -->
+              <div id="analysisFeedback" class="mt-4 p-3 bg-white rounded-3 border small text-muted d-none">
+                <!-- Injected dynamically -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 16: QUICK CHECKLIST -->
+  <section id="checklist" class="py-5 py-lg-6">
+    <div class="container-xl">
+      <div class="section-header text-center mx-auto mb-5" style="max-width: 720px;">
+        <span class="section-badge"><i class="fa-solid fa-list-check me-1"></i> Quality Assurance</span>
+        <h2 class="section-title">Before You Finalize Your Statement</h2>
+        <p class="section-subtitle">
+          Run your statement through this 10-point checklist before submitting to investors, instructors, or your executive team.
+        </p>
+      </div>
+
+      <div class="checklist-card p-4 p-lg-5 mx-auto" style="max-width: 860px;">
+        <div class="checklist-header d-flex flex-wrap justify-content-between align-items-center mb-4 pb-3 border-bottom gap-3">
+          <div>
+            <h5 class="fw-bold mb-1">Final Verification Checklist</h5>
+            <span class="text-muted small">Tick each item as you verify your statement's integrity</span>
+          </div>
+
+          <div class="d-flex align-items-center gap-3">
+            <div class="completion-pill px-3 py-1 rounded-pill bg-light border fw-bold text-primary">
+              <span id="checklistPercentage">0%</span> Complete
+            </div>
+            <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill" id="btn-check-all">
+              Check All
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-danger rounded-pill" id="btn-reset-checklist">
+              Reset
+            </button>
+          </div>
+        </div>
+
+        <div class="progress mb-4" style="height: 10px;">
+          <div id="checklistProgressBar" class="progress-bar bg-primary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <!-- 10 Checkboxes -->
+        <div class="checklist-items-grid">
+          <div class="form-check custom-checkbox-item p-3 rounded-3 mb-2">
+            <input class="form-check-input checklist-box" type="checkbox" id="checkItem1">
+            <label class="form-check-label ms-2" for="checkItem1">
+              <strong>Is the problem clearly defined?</strong>
+              <div class="text-muted small">The statement names the exact breakdown rather than speaking in vague generalities.</div>
+            </label>
+          </div>
+
+          <div class="form-check custom-checkbox-item p-3 rounded-3 mb-2">
+            <input class="form-check-input checklist-box" type="checkbox" id="checkItem2">
+            <label class="form-check-label ms-2" for="checkItem2">
+              <strong>Is the affected stakeholder identified?</strong>
+              <div class="text-muted small">Explicitly states who suffers from the current broken process.</div>
+            </label>
+          </div>
+
+          <div class="form-check custom-checkbox-item p-3 rounded-3 mb-2">
+            <input class="form-check-input checklist-box" type="checkbox" id="checkItem3">
+            <label class="form-check-label ms-2" for="checkItem3">
+              <strong>Is the impact explained?</strong>
+              <div class="text-muted small">Details consequences in dollars, wasted hours, lost morale, or churn.</div>
+            </label>
+          </div>
+
+          <div class="form-check custom-checkbox-item p-3 rounded-3 mb-2">
+            <input class="form-check-input checklist-box" type="checkbox" id="checkItem4">
+            <label class="form-check-label ms-2" for="checkItem4">
+              <strong>Is the root cause understood?</strong>
+              <div class="text-muted small">You've identified why the issue happens, not just treated the superficial symptom.</div>
+            </label>
+          </div>
+
+          <div class="form-check custom-checkbox-item p-3 rounded-3 mb-2">
+            <input class="form-check-input checklist-box" type="checkbox" id="checkItem5">
+            <label class="form-check-label ms-2" for="checkItem5">
+              <strong>Is there measurable evidence?</strong>
+              <div class="text-muted small">Anchored in concrete metrics, benchmark tests, or recorded customer complaints.</div>
+            </label>
+          </div>
+
+          <div class="form-check custom-checkbox-item p-3 rounded-3 mb-2">
+            <input class="form-check-input checklist-box" type="checkbox" id="checkItem6">
+            <label class="form-check-label ms-2" for="checkItem6">
+              <strong>Is the desired outcome clear?</strong>
+              <div class="text-muted small">The future target is clearly painted so everyone recognizes victory.</div>
+            </label>
+          </div>
+
+          <div class="form-check custom-checkbox-item p-3 rounded-3 mb-2">
+            <input class="form-check-input checklist-box" type="checkbox" id="checkItem7">
+            <label class="form-check-label ms-2" for="checkItem7">
+              <strong>Have assumptions been avoided?</strong>
+              <div class="text-muted small">The problem does not presuppose a specific software tool or biased conclusion.</div>
+            </label>
+          </div>
+
+          <div class="form-check custom-checkbox-item p-3 rounded-3 mb-2">
+            <input class="form-check-input checklist-box" type="checkbox" id="checkItem8">
+            <label class="form-check-label ms-2" for="checkItem8">
+              <strong>Have stakeholders validated the problem?</strong>
+              <div class="text-muted small">Actual users suffering the pain have confirmed this is genuinely their #1 priority.</div>
+            </label>
+          </div>
+
+          <div class="form-check custom-checkbox-item p-3 rounded-3 mb-2">
+            <input class="form-check-input checklist-box" type="checkbox" id="checkItem9">
+            <label class="form-check-label ms-2" for="checkItem9">
+              <strong>Is the statement concise?</strong>
+              <div class="text-muted small">Can be read aloud in under 30 seconds without rambling.</div>
+            </label>
+          </div>
+
+          <div class="form-check custom-checkbox-item p-3 rounded-3 mb-2">
+            <input class="form-check-input checklist-box" type="checkbox" id="checkItem10">
+            <label class="form-check-label ms-2" for="checkItem10">
+              <strong>Can success be measured?</strong>
+              <div class="text-muted small">Provides verifiable numbers so anyone can audit the outcome post-implementation.</div>
+            </label>
+          </div>
+        </div>
+
+        <div id="checklistSuccessBanner" class="checklist-congrats-card p-3 rounded-3 text-center mt-4 d-none">
+          <div class="text-success fw-bold fs-5 mb-1"><i class="fa-solid fa-circle-check me-2"></i> 100% Verified!</div>
+          <p class="text-success-emphasis small mb-0">Your problem-solution statement meets all professional criteria. You are ready to present to stakeholders.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 17: KEY TAKEAWAY SECTION -->
+  <section class="py-5 py-lg-6 text-white key-takeaways-section position-relative overflow-hidden">
+    <div class="container-xl position-relative z-1 text-center py-4">
+      <span class="takeaway-pill mb-3 d-inline-block">The Golden Rule</span>
+      <h2 class="display-5 fw-bold mb-3">Remember: Don't start with the solution.</h2>
+      <p class="lead text-light mb-5 mx-auto" style="max-width: 680px;">
+        Fall in love with the problem, not your first idea. Follow the logical pathway that produces durable, transformative outcomes:
+      </p>
+
+      <div class="takeaway-flow-wrapper d-flex flex-wrap justify-content-center align-items-center gap-2 mb-5">
+        <span class="flow-step-pill">Problem</span>
+        <i class="fa-solid fa-arrow-right text-light opacity-50"></i>
+        <span class="flow-step-pill">Evidence</span>
+        <i class="fa-solid fa-arrow-right text-light opacity-50"></i>
+        <span class="flow-step-pill">Impact</span>
+        <i class="fa-solid fa-arrow-right text-light opacity-50"></i>
+        <span class="flow-step-pill">Cause</span>
+        <i class="fa-solid fa-arrow-right text-light opacity-50"></i>
+        <span class="flow-step-pill">Goal</span>
+        <i class="fa-solid fa-arrow-right text-light opacity-50"></i>
+        <span class="flow-step-pill">Solution</span>
+        <i class="fa-solid fa-arrow-right text-light opacity-50"></i>
+        <span class="flow-step-pill highlight">Outcome</span>
+      </div>
+
+      <a href="#builder" class="btn btn-light btn-lg text-primary fw-bold px-5 py-3 rounded-pill shadow-lg">
+        <i class="fa-solid fa-wand-magic-sparkles me-2"></i> Build Your Statement
+      </a>
+    </div>
+  </section>
+
+  <!-- SECTION 18: FOOTER -->
+  <footer class="footer-section py-5 bg-dark text-light border-top border-secondary">
+    <div class="container-xl">
+      <div class="row g-4 align-items-center justify-content-between mb-4 pb-4 border-bottom border-secondary-subtle">
+        <div class="col-lg-5">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <div class="brand-icon-box bg-primary text-white">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h5 class="mb-0 fw-bold">Problem-Solution <span class="text-primary">Guide</span></h5>
+          </div>
+          <p class="text-secondary small mb-0">
+            “Understand the problem. Define the gap. Build better solutions.” An open educational resource for students, builders, and leaders worldwide.
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <ul class="nav justify-content-lg-end gap-3 flex-wrap">
+            <li class="nav-item"><a href="#home" class="nav-link px-0 text-secondary hover-light">Home</a></li>
+            <li class="nav-item"><a href="#framework" class="nav-link px-0 text-secondary hover-light">Framework</a></li>
+            <li class="nav-item"><a href="#solution-neutral" class="nav-link px-0 text-secondary hover-light">Neutrality</a></li>
+            <li class="nav-item"><a href="#example" class="nav-link px-0 text-secondary hover-light">Examples</a></li>
+            <li class="nav-item"><a href="#builder" class="nav-link px-0 text-secondary hover-light">Statement Builder</a></li>
+            <li class="nav-item"><a href="#checklist" class="nav-link px-0 text-secondary hover-light">Checklist</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-between align-items-center small text-secondary">
+        <div>© 2026 Problem-Solution Guide. Open educational reference.</div>
+        <div>
+          <a href="#home" class="text-secondary hover-light text-decoration-none">
+            <i class="fa-solid fa-arrow-up me-1"></i> Back to Top
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: 5-WHYS EXPLORER -->
+  <div class="modal fade" id="fiveWhysModal" tabindex="-1" aria-labelledby="fiveWhysModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0 shadow">
+        <div class="modal-header border-bottom p-4">
+          <h5 class="modal-title fw-bold" id="fiveWhysModalLabel">
+            <i class="fa-solid fa-diagram-project text-primary me-2"></i> The 5 Whys Root Cause Simulator
+          </h5>
+          <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#fiveWhysModal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <p class="text-muted small mb-4">
+            The 5 Whys is an iterative interrogative technique used to explore cause-and-effect relationships. See how asking "Why?" 5 times reveals the hidden root cause:
+          </p>
+
+          <div class="five-whys-stepper">
+            <div class="why-step mb-3 p-3 rounded-3 bg-light border">
+              <span class="badge bg-danger mb-1">Starting Problem</span>
+              <div class="fw-semibold">The vehicle won't start.</div>
+            </div>
+
+            <div class="why-step mb-3 p-3 rounded-3 bg-white border">
+              <span class="badge bg-primary mb-1">1. Why won't it start?</span>
+              <div class="text-dark small">The battery is completely dead.</div>
+            </div>
+
+            <div class="why-step mb-3 p-3 rounded-3 bg-white border">
+              <span class="badge bg-primary mb-1">2. Why is the battery dead?</span>
+              <div class="text-dark small">The alternator is not functioning to recharge it.</div>
+            </div>
+
+            <div class="why-step mb-3 p-3 rounded-3 bg-white border">
+              <span class="badge bg-primary mb-1">3. Why isn't the alternator functioning?</span>
+              <div class="text-dark small">The alternator belt snapped during operation.</div>
+            </div>
+
+            <div class="why-step mb-3 p-3 rounded-3 bg-white border">
+              <span class="badge bg-primary mb-1">4. Why did the alternator belt snap?</span>
+              <div class="text-dark small">The belt had exceeded its useful service life and was never replaced.</div>
+            </div>
+
+            <div class="why-step p-3 rounded-3 bg-success-subtle border border-success-subtle">
+              <span class="badge bg-success mb-1">5. Why was it never replaced? (Root Cause)</span>
+              <div class="text-success-emphasis fw-bold small">The fleet has no documented preventative maintenance schedule!</div>
+            </div>
+          </div>
+
+          <div class="alert alert-info mt-4 mb-0 small">
+            <i class="fa-solid fa-circle-info me-1"></i> <strong>Key Takeaway:</strong> If you only fixed the battery (symptom), it would die again in two days. Fixing the preventative maintenance schedule (root cause) solves the problem permanently.
+          </div>
+        </div>
+        <div class="modal-footer border-top p-3">
+          <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+          <a href="#builder" class="btn btn-primary-gradient rounded-pill px-4" data-bs-dismiss="modal">Apply to My Statement</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <!-- Custom Javascript -->
+  <script src="script.js"></script>
+</body>
+</html>
